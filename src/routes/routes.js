@@ -17,6 +17,9 @@ import Dashboard from '../pages/admin/dashboard/Index';
 //import view admin categories Index
 import CategoriesIndex from '../pages/admin/categories/Index';
 
+//import view admin category Create
+import CategoryCreate from '../pages/admin/categories/Create';
+
 function Routes() {
     return (
         <Switch>
@@ -34,6 +37,11 @@ function Routes() {
             {/* private route "/admin/categories" */}
             <PrivateRoute exact path="/admin/categories">
                 <CategoriesIndex /> 
+            </PrivateRoute>
+
+            {/* private route "/admin/categories/create" */}
+            <PrivateRoute exact path="/admin/categories/create">
+                <CategoryCreate /> 
             </PrivateRoute>
 
         </Switch>
